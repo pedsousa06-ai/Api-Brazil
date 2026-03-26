@@ -8,18 +8,20 @@ API REST desenvolvida em Node.js com Express que fornece dados sobre os estados,
 
 **Tela inicial — Lista de Estados**
 ![Tela inicial](docs/screenshots/screenshot-estados.png)
+*Página inicial da aplicação exibindo a lista completa de todos os estados brasileiros com suas respectivas siglas.*
 
 **Busca por dados do estado**
 ![Dados do Estado](docs/screenshots/screenshot-dados-estado.png)
+*Resultado da busca por um estado específico, exibindo informações como nome completo, capital e região.*
 
 **Busca da capital por sigla**
 ![Capital do Estado](docs/screenshots/screenshot-capital.png)
+*Consulta da capital de um estado a partir da sua sigla, retornando o nome da cidade capital.*
 
 **Capitais históricas — antes de carregar**
 ![Capitais do Brasil](docs/screenshots/screenshot-capitais.png)
+*Tela de capitais históricas do Brasil antes do carregamento dos dados, exibindo o estado inicial da interface.*
 
-**Capitais históricas — antes de carregar**
-![Capitais do Brasil](docs/screenshots/screenshot-capitais.png)
 
 ---
 
