@@ -18,8 +18,9 @@ API REST desenvolvida em Node.js com Express que fornece dados sobre os estados,
 **Capitais históricas — antes de carregar**
 ![Capitais do Brasil](docs/screenshots/screenshot-capitais.png)
 
-~~**Capitais históricas — resultado**~~
-~~![Capitais do Brasil resultado](docs/screenshots/screenshot-capitais-resultado.png)
+**Capitais históricas — resultado**
+![Capitais do Brasil resultado](docs/screenshots/screenshot-capitais-resultado.png)
+
 ---
 
 ## 📁 Estrutura do Projeto
