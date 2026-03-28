@@ -6,51 +6,55 @@ API REST desenvolvida em Node.js com Express que fornece dados sobre os estados,
 
 ## 🖥️ Prévia do Projeto
 
-**Tela inicial — Lista de Estados (antes de carregar)**
+**Tela inicial — Lista de Estados**
 ![Tela inicial](docs/screenshots/screenshot-estados.png)
 *Página inicial da aplicação com o botão para carregar todos os estados brasileiros.*
 
-**Lista de Estados — resultado**
 ![Estados carregados](docs/screenshots/screenshot-estados-resultado.png)
 *Após clicar em "Carregar Estados", são exibidas as siglas dos 27 estados em formato de cards.*
 
-**Dados do Estado (antes de buscar)**
+---
+
+**Dados do Estado**
 ![Dados do Estado](docs/screenshots/screenshot-dados-estado.png)
 *Campo de busca para consultar informações completas de um estado pela sigla.*
 
-**Dados do Estado — resultado**
 ![Dados do Estado resultado](docs/screenshots/screenshot-dados-estado-resultado.png)
 *Resultado da busca exibindo sigla, nome completo, capital e região do estado.*
 
-**Capital do Estado (antes de buscar)**
+---
+
+**Capital do Estado**
 ![Capital do Estado](docs/screenshots/screenshot-capital.png)
 *Campo de busca para consultar a capital de um estado pela sigla.*
 
-**Capital do Estado — resultado**
 ![Capital resultado](docs/screenshots/screenshot-capital-resultado.png)
 *Resultado exibindo a sigla, o nome do estado e sua respectiva capital.*
 
-**Estados por Região (antes de buscar)**
+---
+
+**Estados por Região**
 ![Região](docs/screenshots/screenshot-regiao.png)
 *Menu dropdown para selecionar uma das cinco regiões do Brasil.*
 
-**Estados por Região — resultado**
 ![Região resultado](docs/screenshots/screenshot-regiao-resultado.png)
 *Resultado listando todos os estados pertencentes à região selecionada em cards.*
 
-**Capitais Históricas (antes de carregar)**
+---
+
+**Capitais Históricas do Brasil**
 ![Capitais do Brasil](docs/screenshots/screenshot-capitais.png)
 *Tela de capitais históricas antes do carregamento dos dados.*
 
-**Capitais Históricas — resultado**
 ![Capitais resultado](docs/screenshots/screenshot-capitais-resultado.png)
 *Lista das capitais históricas do Brasil com sigla, cidade, estado e período em que foi capital.*
 
-**Cidades do Estado (antes de buscar)**
+---
+
+**Cidades do Estado**
 ![Cidades](docs/screenshots/screenshot-cidades.png)
 *Campo de busca para listar todas as cidades de um estado pela sigla.*
 
-**Cidades do Estado — resultado**
 ![Cidades resultado](docs/screenshots/screenshot-cidades-resultado.png)
 *Resultado exibindo todas as cidades do estado buscado, com nome, sigla e quantidade total.*
 
