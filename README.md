@@ -4,7 +4,7 @@ API REST desenvolvida em Node.js com Express que fornece dados sobre os estados,
 
 ---
 
-### 🖥️ Prévia do Projeto
+## 🖥️ Prévia do Projeto
 
 **Tela inicial — Lista de Estados (antes de carregar)**
 ![Tela inicial](docs/screenshots/screenshot-estados.png)
