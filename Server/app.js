@@ -57,8 +57,9 @@ app.get("/cidades/:uf", function(req, res) {
 })
  
 // ========== SERVIDOR ==========
-app.listen(2000, function() {
-    console.log("servidor rodando na porta 2000")
-    console.log("→ App:  http://localhost:2000")
-    console.log("→ Docs: http://localhost:2000/docs")
+const PORT = process.env.PORT || 2000
+app.listen(PORT, function() {
+    console.log(`Servidor rodando na porta ${PORT}`)
+    console.log(`→ App:  http://localhost:${PORT}`)
+    console.log(`→ Docs: http://localhost:${PORT}/docs`)
 })
