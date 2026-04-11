@@ -167,54 +167,7 @@ http://localhost:2000
 
 Abra o arquivo `public/index.html` com o Live Server.
 
----
-
-## 🚀 Deploy da API (Render)
-
-### 1. Suba o projeto no GitHub
-
-```bash
-git init
-git add .
-git commit -m "deploy api"
-git branch -M main
-git remote add origin https://github.com/seu-usuario/sua-api.git
-git push -u origin main
-```
-
-### 2. Configure no Render
-
-- Acesse: https://render.com  
-- Clique em **New Web Service**
-- Conecte o repositório
-
-**Configurações:**
-
-- Build Command: `npm install`
-- Start Command: `node app.js`
-
-### 3. Configure a porta no app.js
-
-```js
-const PORT = process.env.PORT || 2000;
-app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
-```
-
-### 4. Atualize o link no README
-
-Substitua:
-
-```
-https://sua-api-brasil.onrender.com
-```
-
-pelo seu link real.
-
----
-
 ## 📡 Rotas da API
-
-Base URL: `https://sua-api-brasil.onrender.com`
 
 | Método | Rota | Descrição |
 |--------|------|-----------|
