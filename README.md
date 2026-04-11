@@ -12,9 +12,6 @@
 
 <br/>
 
-🌐 **[Acesse a API online](https://sua-api-brasil.onrender.com)**  
-📡 **Base URL:** `https://sua-api-brasil.onrender.com`
-
 </div>
 
 ---
