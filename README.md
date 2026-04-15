@@ -2,93 +2,116 @@
 
 # 🇧🇷 Brasil API
 
-**API REST desenvolvida em Node.js com Express para fornecer dados sobre estados, capitais, cidades e regiões do Brasil**
+**API REST completa para consulta de dados do Brasil — estados, capitais, cidades e regiões**
 
-![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-Framework-000000?style=for-the-badge&logo=express&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge\&logo=node.js\&logoColor=white)
+![Express](https://img.shields.io/badge/Express-Framework-000000?style=for-the-badge\&logo=express\&logoColor=white)
 ![Version](https://img.shields.io/badge/Version-1.0.0-2962FF?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-ff9800?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Online-00c853?style=for-the-badge)
 
 <br/>
 
-</div>
+🚀 **API em Online:**
+👉 https://api-brazil-5imc.onrender.com/
 
 ---
 
 ## 📖 Sobre o Projeto
 
-API REST desenvolvida com foco em organização e boas práticas para fornecer dados completos sobre o Brasil, incluindo estados, capitais, cidades e regiões.  
+A **Brasil API** é uma API REST desenvolvida com foco em organização, performance e boas práticas.
 
-O projeto também conta com um front-end integrado para visualização dos dados de forma simples e intuitiva.
+Ela fornece dados completos sobre o Brasil:
 
----
+* Estados 🇧🇷
+* Capitais 🏙️
+* Cidades 📍
+* Regiões 🌎
 
-## 🖥️ Prévia do Projeto
-
-**Tela inicial — Lista de Estados**  
-![Tela inicial](docs/screenshots/screenshot-estados.png)  
-*Página inicial da aplicação com o botão para carregar todos os estados brasileiros.*
-
-![Estados carregados](docs/screenshots/screenshot-estados-resultado.png)  
-*Após clicar em "Carregar Estados", são exibidas as siglas dos 27 estados em formato de cards.*
+Além disso, o projeto possui um **front-end integrado**, permitindo visualizar os dados de forma simples e prática.
 
 ---
 
-**Dados do Estado**  
-![Dados do Estado](docs/screenshots/screenshot-dados-estado.png)  
-*Campo de busca para consultar informações completas de um estado pela sigla.*
+## 🌐 Acesse Online
 
-![Dados do Estado resultado](docs/screenshots/screenshot-dados-estado-resultado.png)  
-*Resultado da busca exibindo sigla, nome completo, capital e região do estado.*
+Você pode testar direto no navegador:
 
----
+```
+https://api-brazil-5imc.onrender.com/
+```
 
-**Capital do Estado**  
-![Capital do Estado](docs/screenshots/screenshot-capital.png)  
-*Campo de busca para consultar a capital de um estado pela sigla*
+Exemplo:
 
-![Capital resultado](docs/screenshots/screenshot-capital-resultado.png)  
-*Resultado exibindo a sigla, o nome do estado e sua respectiva capital.*
-
----
-
-**Estados por Região**  
-![Região](docs/screenshots/screenshot-regiao.png)  
-*Menu dropdown para selecionar uma das cinco regiões do Brasil.*
-
-![Região resultado](docs/screenshots/screenshot-regiao-resultado.png)  
-*Resultado listando todos os estados pertencentes à região selecionada em cards.*
-
----
-
-**Capitais Históricas do Brasil**  
-![Capitais do Brasil](docs/screenshots/screenshot-capitais.png)  
-*Tela de capitais históricas antes do carregamento dos dados.*
-
-![Capitais resultado](docs/screenshots/screenshot-capitais-resultado.png)  
-*Lista das capitais históricas do Brasil com sigla, cidade, estado e período em que foi capital.*
-
----
-
-**Cidades do Estado**  
-![Cidades](docs/screenshots/screenshot-cidades.png)  
-*Campo de busca para listar todas as cidades de um estado pela sigla.*
-
-![Cidades resultado](docs/screenshots/screenshot-cidades-resultado.png)  
-*Resultado exibindo todas as cidades do estado buscado, com nome, sigla e quantidade total.*
+```
+https://api-brazil-5imc.onrender.com/estado/SP
+```
 
 ---
 
 ## ✨ Funcionalidades
 
-- ✅ Listagem de todos os estados brasileiros
-- ✅ Consulta de dados completos de um estado
-- ✅ Busca da capital por sigla
-- ✅ Filtro de estados por região
-- ✅ Listagem de capitais históricas do Brasil
-- ✅ Consulta de todas as cidades de um estado
-- ✅ Interface visual integrada com consumo da API
+* ✅ Listagem de todos os estados brasileiros
+* ✅ Consulta completa de um estado
+* ✅ Retorno da capital por sigla
+* ✅ Filtro por região
+* ✅ Capitais históricas do Brasil
+* ✅ Lista de cidades por estado
+* ✅ Interface web integrada
+
+---
+
+## 📡 Rotas da API
+
+| Método | Endpoint          | Descrição                 |
+| ------ | ----------------- | ------------------------- |
+| GET    | `/estados`        | Lista todos os estados    |
+| GET    | `/estado/:uf`     | Dados completos do estado |
+| GET    | `/capital/:uf`    | Capital do estado         |
+| GET    | `/regiao/:regiao` | Estados por região        |
+| GET    | `/capitais`       | Capitais históricas       |
+| GET    | `/cidades/:uf`    | Cidades do estado         |
+
+### 🔎 Exemplos
+
+```
+GET /estado/SP
+GET /capital/RJ
+GET /regiao/Sudeste
+GET /cidades/MG
+```
+
+---
+
+## 🛠️ Tecnologias
+
+### Back-end
+
+* Node.js
+* Express
+* CORS
+
+### Front-end
+
+* HTML5
+* CSS3
+* JavaScript (Fetch API)
+
+---
+
+## 🚀 Como rodar localmente
+
+```bash
+git clone https://github.com/seu-usuario/API-Brazil.git
+cd API-Brazil/Server
+npm install
+node app.js
+```
+
+Servidor:
+
+```
+http://localhost:2000
+```
 
 ---
 
@@ -98,116 +121,20 @@ O projeto também conta com um front-end integrado para visualização dos dados
 API-Brazil/
 │
 ├── Server/
-│   ├── app.js                  # Servidor Express e rotas da API
-│   ├── package.json
-│   ├── package-lock.json
-│   └── modulo/
-│       ├── fuction.js          # Funções de consulta aos dados
-│       └── estados_cidades.js  # Base de dados dos estados e cidades
-│
 ├── public/
-│   ├── index.html              # Interface do front-end
-│   ├── favicon.svg             # Ícone do site
-│   ├── css/
-│   │   └── style.css           # Estilos da interface
-│   └── js/
-│       └── script.js           # Lógica de consumo da API
-│
 ├── docs/
-│   └── screenshots/            # Imagens do projeto
-│
-└── .gitignore
 ```
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## 👨‍💻 Autor
 
-**Back-end**
-- Node.js
-- Express
-- CORS
-
-**Front-end**
-- HTML5
-- CSS3
-- JavaScript (Fetch API)
-- Google Fonts — Playfair Display + DM Mono
-
----
-
-## 🚀 Como rodar o projeto
-
-### Pré-requisitos
-
-- Node.js v18 ou superior  
-- npm  
-- Extensão Live Server (VS Code)
-
-### Instalação
-
-```bash
-cd Server
-npm install
-```
-
-### Iniciando o servidor
-
-```bash
-node app.js
-```
-
-O servidor estará rodando em:
-
-```
-http://localhost:2000
-```
-
-### Abrindo o front-end
-
-Abra o arquivo `public/index.html` com o Live Server.
-
-## 📡 Rotas da API
-
-| Método | Rota | Descrição |
-|--------|------|-----------|
-| GET | `/estados` | Retorna todos os estados |
-| GET | `/estado/:uf` | Dados completos de um estado |
-| GET | `/capital/:uf` | Capital do estado |
-| GET | `/regiao/:regiao` | Estados por região |
-| GET | `/capitais` | Capitais históricas |
-| GET | `/cidades/:uf` | Cidades do estado |
-
-### Exemplos de uso
-
-```bash
-GET /estados
-GET /estado/SP
-GET /capital/RJ
-GET /regiao/Sul
-GET /capitais
-GET /cidades/MG
-```
-
----
-
-## 📦 Dependências
-
-```json
-{
-  "express": "^5.2.1",
-  "cors": "^2.8.5"
-}
-```
-
----
-
-## 👤 Autor
-
-Desenvolvido por **Pedro** — SENAI
+Desenvolvido por **Pedro Sousa**
+🎓 SENAI
 
 ---
 
 ## 📄 Licença
 
 Este projeto está sob a licença MIT.
+
