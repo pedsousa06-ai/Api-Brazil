@@ -1,4 +1,4 @@
-const BASE = 'http://localhost:2000'
+const BASE = 'https://api-brazil-5imc.onrender.com'
 
 function showPanel(name) {
   document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'))
@@ -37,7 +37,7 @@ async function fetchEstados() {
   } catch (e) {
     setDot('estados', 'err')
     document.getElementById('result-estados').innerHTML =
-      '<span class="empty">❌ Erro ao conectar. Verifique se o servidor está rodando na porta 2000.</span>'
+      '<span class="empty">❌ Erro ao conectar com o servidor.</span>'
   }
 }
 
